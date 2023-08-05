@@ -30,6 +30,7 @@ void GeoDetic_TO_ENU(double lat, double lon, double h, double lat0, double lon0,
 ``` 
 
 ●使用存下的第一次航向角(因为是以北为正方向，所以需要减去90度转成以东为正方向)对东北天下的车身坐标进行旋转，得到以车身初始位置为坐标系的新全局坐标
+
     ``` 
     tf2::Transform transform;
     transform.setOrigin(tf2::Vector3( 0,0,0));
